@@ -1,7 +1,7 @@
 // Constants
 const LOADING_TIME = 4000;
 const TOTAL_QUESTIONS = 10;
-const API_URL = "https://opentdb.com/api.php?amount=1&type=multiple";
+const API_URL = "https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple";
 
 // DOM Elements
 const loadingElement = document.getElementById("loading");
