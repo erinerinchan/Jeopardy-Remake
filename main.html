@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeopardy!</title>
+  <link rel="stylesheet" href="main-page/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Loading section -->
+  <div id="loading">
+    <div class="image">
+      <img src="image/logo.png" class="logo" alt="logo" height="70" width="350" />
+      <img src="image/host.png" class="host" alt="host" height="350" width="117" />
+    </div>
+    <div class="caption">
+      <p>Questions are on your way...</p>
+    </div>
+  </div>
+
+  <!-- Main page-->
+  <div id="main">
+    <!-- Image section -->
+    <div class="image">
+      <img src="image/logo.png" class="logo" alt="logo" height="45" width="200" />
+      <img src="image/host.png" class="host" alt="host" height="200" width="66" />
+      <!-- Score section -->
+      <div class="score">
+        <span class="correct-score">0</span> /
+        <span class="total-question">10</span>
+      </div>
+    </div>
+
+    <!-- Container for the question-->
+    <div class="game">
+      <h3 class="question"></h3>
+      <span class="category"></span>
+      <ul class="choices">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="result"></div>
+      <div class="game-buttons">
+        <button type="button" class="check-answer">Check Answer</button>
+        <button type="button" class="play-again">Play Again</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Background music -->
+  <audio id="audio" controls autoplay loop style="display: none">
+    <source src="music.mp3" type="audio/mp3" />
+  </audio>
+  <a href="javascript:void(0);" onclick="toggleMute()" class="audio"><i class="fa-solid fa-volume-low"></i></a>
+
+  <script src="main-page/main.js"></script>
+</body>
+
+</html>
